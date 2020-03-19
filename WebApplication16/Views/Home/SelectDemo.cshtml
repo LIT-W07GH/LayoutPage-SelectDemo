@@ -1,0 +1,24 @@
+﻿@using System.Security.Cryptography
+@model  SelectDemoViewModel
+
+<div class="row" style="margin-top: 40px;">
+    <div class="col-md-6 col-md-offset-3 well">
+        <form method="post" action="/home/selectpost">
+            <select name="color" class="form-control">
+                @foreach (Color color in Model.Colors)
+                {
+                    <option value="@color.Id">@color.Value</option>
+                }
+            </select>
+            <button class="btn btn-info">Submit</button>
+            @if (true)
+            {
+                <h1>Foo</h1>
+            }
+            else
+            {
+                <h1>Bar</h1>
+            }
+        </form>
+    </div>
+</div>
