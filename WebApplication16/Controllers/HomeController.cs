@@ -60,7 +60,7 @@ namespace WebApplication16.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostDate(DateTime date)
+        public IActionResult PostDate(DateTime selectedDate)
         {
             return Redirect("/home/datedemo");
         }
